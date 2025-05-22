@@ -27,7 +27,7 @@ public class MainController {
 	public ResponseEntity<?> addUserData(@RequestBody UserInfo userInfo) {
 		userInfo.setPassword(encoder.encode(userInfo.getPassword()));
 		UserInfo savedUser = repository.save(userInfo);
-		logger.info("User saved successfully: {}", savedUser);
+		logger.info("User saved successfully : {}", savedUser);
 		return ResponseEntity.status(HttpStatus.CREATED).body(savedUser);
 	}
 
