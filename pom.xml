@@ -12,6 +12,7 @@
 	<groupId>com.security.test</groupId>
 	<artifactId>SpringSecurityTestDemo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>SpringSecurityTestDemo</name>
 	<description>This is project to implement Spring Security Testing Demo</description>
 	<url />
@@ -59,6 +60,7 @@
 	</dependencies>
 
 	<build>
+	 <finalName>SpringSecurityH2DBExample</finalName> 
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
